@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsivo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 
     <title>Cardápio On-line</title>
@@ -26,90 +30,57 @@
         <i class="fa fa-shopping-bag"></i>
     </a>
 
-    <section class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg pl-0 pr-0 col-one">
-                <a class="navbar-brand wow fadeIn" href="#">
-                    <img src="./img/logo.svg" alt="Logo" width="160" class="img-logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                    <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto mr-auto wow fadeIn">
-                        <li class="nav-item">
-                            <a href="#reservas" class="nav-link"><b>Reserva</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#servicos" class="nav-link"><b>Serviços</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#cardapio" class="nav-link"><b>Cardápio</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
-                        </li>
-                    </ul>
-                    <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
-                        Meu carrinho <span class="icon">
-                            <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
-                            <i class="fa fa-shopping-bag"></i>
-                        </span>
-                    </a>
+    <!--HEADER DESKTOP-->
+    <div class="bg-home">
+        <header class="header-desktop">
+            <nav class="header-content container">
+                <div class="header-menu">
+                    <a href="">Home</a>
+                    <a href="">Sobre nós</a>
+                </div>
+                <div class="header-logo">
+                    <img class="img-logo" src="./img/logo_sophie.png" alt="Logo da cafeteria">
+                </div>
+                <div class="header-menu">
+                    <a href="">Produtos</a>
+                    <a href="">Contatos</a>
                 </div>
             </nav>
-        </div>
-    </section>
 
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-one">
-                    <div class="d-flex text-banner">
-                        <h1 class="wow fadeInLeft"><b>Escolha sua comida <b class="color-primary">favorita.</b></b></h1>
-                        <p class="wow fadeInLeft delay-03s">Aproveite nosso cardápio! Escolha o que desejar e receba em sua casa de forma rápida e segura.</p>
-                        <div class="wow fadeIn delay-05s">
-                            <a href="#cardapio" class="btn btn-yellow mt-4 mr-3">
-                                Ver cardápio
-                            </a>
-                            <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
-                                <span class="icon-left">
-                                    <i class="fa fa-phone"></i>
-                                </span>
-                                (88) 99999-9999
-                            </a>
-                        </div>
-                    </div>
-                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="btn btn-sm btn-white btn-social mt-4 wow fadeIn delay-07s">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </div>
+            <main class="hero container">
+                <h1>Faça o seu pedido e traga mais sabor ao seu dia!</h1>
+            </main>
+        </header>
+    </div>
 
-                <div class="col-6 no-mobile">
-                    <div class="card-banner wow fadeIn delay-02s"></div>
-                    <div class="d-flex img-banner wow fadeIn delay-05s">
-                        <img src="./img/burguer.png" alt="Hamburguer">
-                    </div>
-                    <div class="card card-case wow fadeInRight delay-07s ">
-                        "Entrega rápida e funcionários simpáticos.
-                        <br> A comida chegou quente e <br>
-                        muito saborosa!"
-                        <span class="card-case-name">
-                            <b>Thiago Lopes</b>
-                        </span>
-                    </div>
+    <!--HEADER MOBILE-->
+    <div class="bg-home">
+        <header class="header-mobile">
+            <div class="div-button">
+                <button class="nav-button" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+            </div>
+            
+            <img class="log-mob" src="./img/logo_sophie.png" alt="Logo da cafeteria">
+            
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="">Home</a>
+                    <a href="">Sobre nós</a>
+                    <a href="">Produtos</a>
+                    <a href="">Contatos</a>
                 </div>
             </div>
-        </div>
-    </section>
+            <main class="hero container">
+                <h1>Faça o seu pedido e traga mais sabor ao seu dia!</h1>
+            </main>
+        </header>
+    </div>
+
+    
 
     <section class="servicos" id="servicos">
 
@@ -163,6 +134,96 @@
         </div>
     </section>
 
+    <section class="destaques">
+
+        <div class="content_destaques">
+            <span class="hint-title"><b>Destaques</b></span>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/destaques/cuscuz.jpg"  alt="Cuscuz">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Cuscuz Nordestino</h5>
+                      <p>R$ 12,00</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/destaques/cuscuz_2.jpg"  alt="Cuscuz">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Cuscuz Picante</h5>
+                      <p>R$ 14,00</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/destaques/brownie.jpg"  alt="Brownie">
+                    <div class="carousel-caption d-md-block">
+                      <h5>Brownie</h5>
+                      <p>R$ 6,00</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="destaques_desktop">
+
+        <div class="container_destaques">
+            <span class="hint-title"><b>Destaques</b></span>
+            <div class="destaques_desktop_content">
+                <div class="destaques_desktop_content_item">
+                  <img src="./img/destaques/cuscuz.jpg"  alt="Cuscuz">
+                </div>
+                <div class="destaques_desktop_content_item">
+                  <img src="./img/destaques/cuscuz_2.jpg"  alt="Cuscuz">
+                </div>
+                <div class="destaques_desktop_content_item">
+                  <img src="./img/destaques/brownie.jpg"  alt="Brownie">
+                </div>
+              </div>
+        </div>
+        
+    </section>
+
+    <section class="curiosidade">
+
+        <div class="content_curiosidade">
+            <div class="title_curiosidade">
+                <span class="hint-title"><b>Curiosidade</b></span>
+                <h4>Você conhece a origem do cuscuz?</h4>
+            </div>
+            <div class="container_text_curiosidades">
+                <div class="text_curiosidades">
+                    <p>Estima-se que o prato foi criado na África, por volta do século XIII pelos Berberes. Estes povos habitavam o chamado Magreb, região que hoje é composta por cinco países: Marrocos, Argélia, Tunísia, Líbia e Mauritânia.</p>
+                </div>
+
+                <div class="text_curiosidades">
+                    <p>No Brasil, o cuscuz foi trazido pelas mãos dos colonizadores portugueses que, por sua vez, já haviam importado a iguaria dos países árabes. Uma vez em território nacional, o alimento foi adotado pelos povos indígenas.</p>
+                </div>
+                
+                <div class="text_curiosidades">
+                    <p>Na mesa dos nordestinos, o clássico que também é um símbolo cultural da região, aparece em diversas apresentações, podendo ser servido com manteiga, ovo, leite, carne de charque ou de sol, bode e galinha guisada, banana amassada e tantas outras combinações.</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
     <section class="cardapio" id="cardapio">
 
         <div class="background-cardapio"></div>
@@ -178,34 +239,24 @@
                 </div>
 
                 <div class="col-12 col-one container-menu wow fadeInUp">
-                    <a class="btn btn-white btn-sm mr-3 active" id="menu-burgers"
-                     onclick="cardapio.metodos.obterItensCardapio('burgers')">
-                        <i class="fas fa-hamburger"></i>&nbsp; Burguers
+                    <a class="btn btn-white btn-sm mr-3 active" id="menu-cuscuz"
+                     onclick="cardapio.metodos.obterItensCardapio('cuscuz')">
+                        <i class="fas fa-hamburger"></i>&nbsp; Cuscuz
                     </a>
 
-                    <a class="btn btn-white btn-sm mr-3" id="menu-pizzas"
-                    onclick="cardapio.metodos.obterItensCardapio('pizzas')">
-                        <i class="fas fa-pizza-slice"></i>&nbsp; Pizzas
+                    <a class="btn btn-white btn-sm mr-3" id="menu-pao_na_chapa"
+                    onclick="cardapio.metodos.obterItensCardapio('pao_na_chapa')">
+                        <i class="fas fa-pizza-slice"></i>&nbsp; Pão na chapa
                     </a>
 
-                    <a class="btn btn-white btn-sm mr-3" id="menu-churrasco"
-                    onclick="cardapio.metodos.obterItensCardapio('churrasco')">
-                        <i class="fas fa-drumstick-bite"></i>&nbsp; Churrasco
+                    <a class="btn btn-white btn-sm mr-3" id="menu-sucos"
+                    onclick="cardapio.metodos.obterItensCardapio('sucos')">
+                        <i class="fas fa-cocktail"></i>&nbsp; Sucos
                     </a>
 
-                    <a class="btn btn-white btn-sm mr-3" id="menu-steaks"
-                    onclick="cardapio.metodos.obterItensCardapio('steaks')">
-                        <i class="fas fa-bacon"></i>&nbsp; Steaks
-                    </a>
-
-                    <a class="btn btn-white btn-sm mr-3" id="menu-bebidas"
-                    onclick="cardapio.metodos.obterItensCardapio('bebidas')">
-                        <i class="fas fa-cocktail"></i>&nbsp; Bebidas
-                    </a>
-
-                    <a class="btn btn-white btn-sm mr-3" id="menu-sobremesas"
-                    onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
-                        <i class="fas fa-ice-cream"></i>&nbsp; Sobremesas
+                    <a class="btn btn-white btn-sm mr-3" id="menu-brownie"
+                    onclick="cardapio.metodos.obterItensCardapio('brownie')">
+                        <i class="fas fa-ice-cream"></i>&nbsp; Brownie
                     </a>
                 </div>
 
@@ -221,158 +272,6 @@
                     </a>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="depoimentos" id="depoimentos">
-
-        <div class="background-depoimentos"></div>
-
-        <div class="container">
-            <div class="row">
-
-                <div class="col-5 no-mobile text-center">
-                    <div class="card-depoimentos wow fadeIn "></div>
-                    <div class="d-flex img-banner wow fadeInLeft delay-03s">
-                        <img src="./img/pizzas.png" alt="Pizzas">
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-7 col-md-7 col-sm-12 col-one">
-                    <span class="hint-title wow fadeIn"><b>Depoimentos</b></span>
-                    <h1 class="title wow fadeIn ">
-                        <b>O que dizem sobre nós?</b>
-                    </h1>
-                    <div class="mb-5">
-
-                        <div class="depoimento animated fadeIn" id="depoimento-1">
-                            <div class="container-dados-depoimento">
-                                <div class="imagem-depoimento"></div>
-                                <div>
-                                    <p class="nome-depoimento"><b>Diego Pereira</b></p>
-                                    <p class="nota-depoimento">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="texto-depoimento">
-                                <i class="fas fa-quote-left"></i>
-                                <span>
-                                    Muito bom, recomendo demais! Comida muito bem feita pelo chefe, atendimento dentro dos parâmetros e boa comunicação com o cliente.
-                                </span>
-                                <i class="fas fa-quote-right"></i>
-                            </p>
-                        </div>
-
-                        <div class="depoimento animated fadeIn hidden" id="depoimento-2">
-                            <div class="container-dados-depoimento">
-                                <div class="imagem-depoimento"></div>
-                                <div>
-                                    <p class="nome-depoimento"><b>Ana Beatriz</b></p>
-                                    <p class="nota-depoimento">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>&nbsp; <span>5.0</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="texto-depoimento">
-                                <i class="fas fa-quote-left"></i>
-                                <span>
-                                    Um jantar perfeito do começo ao fim. Comida, experência, serviço...
-                                    foi tão maravilhoso que fomos dois dias seguidos - fato inédito para mim em uma viagem.
-                                </span>
-                                <i class="fas fa-quote-right"></i>
-                            </p>
-                        </div>
-
-                        <div class="depoimento animated fadeIn hidden" id="depoimento-3">
-                            <div class="container-dados-depoimento">
-                                <div class="imagem-depoimento"></div>
-                                <div>
-                                    <p class="nome-depoimento"><b>João Guilherme</b></p>
-                                    <p class="nota-depoimento">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>&nbsp; <span>4.0</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="texto-depoimento">
-                                <i class="fas fa-quote-left"></i>
-                                <span>
-                                    A comida estava excelente e o serviço gentil nos surpreendeu! 
-                                    Dica: reserve umas 3 horas para ter uma experiência incrível!
-                                </span>
-                                <i class="fas fa-quote-right"></i>
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <a id="btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active" onclick="cardapio.metodos.abrirDepoimento(1)">
-                        1
-                    </a>
-
-                    <a id="btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3" onclick="cardapio.metodos.abrirDepoimento(2)">
-                        2
-                    </a>
-
-                    <a id="btnDepoimento-3" class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(3)">
-                        3
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="reserva" id="reservas">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-one">
-
-                    <div class="card-secondary wow fadeInUp">
-
-                        <div class="row">
-
-                            <div class="col-12 col-lg-7 col-md-7 col-sm-12 ">
-                                <span class="hint-title"><b>Reserva</b></span>
-                                <h1 class="title">
-                                    <b>Quer reservar um horário?</b>
-                                </h1>
-                                <p class="pr-5">
-                                    Mande uma mensagem clicando no botão abaixo
-                                    <br>
-                                    Reserve sua data e horário de forma simples e rápida.
-                                </p>
-                                <a class="btn btn-yellow mt-4 wow fadeIn delay-05s " href="#" id="btnReserva" target="_blank">
-                                    Fazer reserva
-                                </a>
-                            </div>
-
-                            <div class="col-5 no-mobile">
-                                <div class="card-reserva"></div>
-                                <div class="d-flex img-banner">
-                                    <img src="./img/icone-reserva.svg" alt="Reserva">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
@@ -609,6 +508,10 @@
     <script type="text/javascript" src="./js/wow.min.js"></script>
     <script type="text/javascript" src="./js/dados.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script>new WOW().init();</script>
     

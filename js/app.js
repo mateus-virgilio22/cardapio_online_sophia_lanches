@@ -27,7 +27,7 @@ cardapio.eventos = {
 cardapio.metodos = {
 
     //Obtem a lista de itens do cardapio
-    obterItensCardapio: (categoria = 'burgers', vermais = false) => {
+    obterItensCardapio: (categoria = 'cuscuz', vermais = false) => {
 
         var filtro = MENU[categoria];
         console.log(filtro);
@@ -45,8 +45,8 @@ cardapio.metodos = {
             .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
             .replace(/\${id}/g, e.id)
 
-            // botão ver mais foi clicado (12 itens)
-            if(vermais && i >= 8 && i < 12) {
+            // botão ver mais foi clicado (13 itens)
+            if(vermais && i >= 8 && i < 13) {
                 $("#itensCardapio").append(temp)
             }
 
