@@ -487,11 +487,11 @@ cardapio.metodos = {
                     if (!("erro" in dados)) {
 
                         // atualizar os campos com os valores retornados
-                        $("#txtEndereco").val(dados.logradouro);
+                        $("#txtEndereco").val(dados.logradouro).focus();
                         $("#txtBairro").val(dados.bairro);
                         $("#txtCidade").val(dados.localidade);
                         $("#ddlUf").val(dados.uf);
-                        $("#txtNumero").focus();
+                        $("#txtNumero");
 
                     }
                     else {

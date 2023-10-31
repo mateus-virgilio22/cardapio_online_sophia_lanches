@@ -910,8 +910,8 @@ select.form-control {
 
 .container-cep .btn {
     position: absolute;
-    right: 25px;
-    top: 38px;
+    right: 25px!important;
+    top: 18px!important;
 }
 
 .img-produto-resumo img {
