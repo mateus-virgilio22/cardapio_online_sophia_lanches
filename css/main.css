@@ -279,6 +279,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+}
+
+.title_curiosidade > h4 {
+    font-size: 16px;
 }
 
 .container_text_curiosidades {
@@ -498,7 +503,14 @@ header {
     border-radius: 11px;
 }
 
-.card-item .title-produto {
+.content_title_price {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.card-item .content_title_price .title-produto {
     color: var(--color-black);
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -512,6 +524,10 @@ header {
 .card-item .price-produto {
     color: var(--color-primary);
     font-size: 20px;
+}
+
+.dsc-produto {
+    font-size: 12px;
 }
 
 .card-item .add-carrinho {

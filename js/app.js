@@ -44,9 +44,10 @@ cardapio.metodos = {
             .replace(/\${nome}/g, e.name)
             .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
             .replace(/\${id}/g, e.id)
+            .replace(/\${dsc}/g, e.dsc)
 
-            // botão ver mais foi clicado (15 itens)
-            if(vermais && i >= 8 && i < 15) {
+            // botão ver mais foi clicado (16 itens)
+            if(vermais && i >= 8 && i < 16) {
                 $("#itensCardapio").append(temp)
             }
 
@@ -700,12 +701,17 @@ cardapio.templates = {
                 <div class="img-produto">
                     <img src="\${img}"/>
                 </div>
-                <p class="title-produto text-center mt-4">
-                    <b>\${nome}</b>
-                </p>
-                <p class="price-produto text-center">
-                    <b>R$ \${preco}</b>
-                </p>
+                <div class="content_title_price">
+                    <p class="title-produto">
+                        <b>\${nome}</b>
+                    </p>
+                    <p class="price-produto">
+                        <b>R$ \${preco}</b>
+                    </p>
+                    <p class="dsc-produto">
+                        \${dsc}
+                    </p>
+                </div>
                 <div class="add-carrinho">
                     <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')">
                         <i class="fas fa-minus"></i>
