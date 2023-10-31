@@ -347,12 +347,11 @@ header {
 }
 
 .btn-yellow {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary)!important;
     color: var(--color-white)!important;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
-    box-shadow: c
 }
 
 .btn-icon-left {

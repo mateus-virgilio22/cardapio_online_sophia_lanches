@@ -10,7 +10,7 @@ var MEU_ENDERECO = null;
 
 var VALOR_CARRINHO = 0;
 
-var VALOR_ENTREGA = 5;
+var VALOR_ENTREGA = 1.5;
 
 var CELULAR_EMPRESA = '5588998195203';
 
@@ -45,8 +45,8 @@ cardapio.metodos = {
             .replace(/\${preco}/g, e.price.toFixed(2).replace('.', ','))
             .replace(/\${id}/g, e.id)
 
-            // botão ver mais foi clicado (13 itens)
-            if(vermais && i >= 8 && i < 13) {
+            // botão ver mais foi clicado (15 itens)
+            if(vermais && i >= 8 && i < 15) {
                 $("#itensCardapio").append(temp)
             }
 
