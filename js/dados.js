@@ -3,14 +3,14 @@ var MENU = {
         {
             "id": "best-of-texas-bbq-combo-serves-16",
             "img": "./img/cardapio/cuscuz/cuscuz.jpg",
-            "name": "Tradicional",
+            "name": "Cuscuz-manteiga",
             "dsc": "Manteiga",
             "price": 7.00
         },
         {
             "id": "best-of-texas-bbq-combo-serves-19",
             "img": "./img/cardapio/cuscuz/cuscuz.jpg",
-            "name": "Tradicional",
+            "name": "Cuscuz-leite",
             "dsc": "Leite",
             "price": 7.00
         },
@@ -124,28 +124,28 @@ var MENU = {
         {
             "id": "shake-shack-shackburger-8-pack",
             "img": "./img/cardapio/pao/pao.jpg",
-            "name": "Tipo 1",
+            "name": "Pão na chapa - 1",
             "dsc": "Pão francês, frango e mussarela",
             "price": 6.00
         },
         {
             "id": "gotts-cheeseburger-kit-for-4",
             "img": "./img/cardapio/pao/pao.jpg",
-            "name": "Tipo 2",
+            "name": "Pão na chapa - 2",
             "dsc": "Pão francês, carne de sol e mussarela",
             "price": 8.00
         },
         {
             "id": "le-big-matt-kit-for-6",
             "img": "./img/cardapio/pao/pao.jpg",
-            "name": "Tipo 3",
+            "name": "Pão na chapa - 3",
             "dsc": "Pão francês, frango, ovo e mussarela",
             "price": 8.00
         },
         {
             "id": "shake-shack-shackburger-16-pack",
             "img": "./img/cardapio/pao/pao.jpg",
-            "name": "Tipo 4",
+            "name": "Pão na chapa - 4",
             "dsc": "Pão francês, carne de sol, ovo e mussarela",
             "price": 9.00
         },
@@ -212,28 +212,28 @@ var MENU = {
         {
             "id": "hong-kong-boba-tea-kit-for-6",
             "img": "./img/cardapio/brownie/brownie.jpg",
-            "name": "Tradicional",
+            "name": "Brownie tradicional",
             "dsc": "",
             "price": 5.00
         },
         {
             "id": "guys-caliente-margaritas-for-12",
             "img": "./img/cardapio/brownie/brownie.jpg",
-            "name": "Recheado",
+            "name": "Brownie c/ ninho",
             "dsc": "Ninho",
             "price": 8.00
         },
         {
             "id": "woodford-reserve-mint-julep-syrup",
             "img": "./img/cardapio/brownie/brownie.jpg",
-            "name": "Recheado",
+            "name": "Brownie c/ brigadeiro",
             "dsc": "Brigadeiro",
             "price": 8.00
         },
         {
             "id": "new-orleans-hurricane-mix",
             "img": "./img/cardapio/brownie/brownie.jpg",
-            "name": "Recheado",
+            "name": "Brownie c/ cacau 50%",
             "dsc": "Cacau 50%",
             "price": 8.00
         }
