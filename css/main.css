@@ -964,6 +964,7 @@ select.form-control {
 
 .title_reserva {
     text-align: center;
+    padding: 10px;
 }
 
 .title_reserva > b {
@@ -979,7 +980,7 @@ select.form-control {
 
 @media screen and (max-width: 768px) {
     .content_reserva {
-        width: 80%;
+        width: 90%;
     }
 
     .title_reserva > b {
