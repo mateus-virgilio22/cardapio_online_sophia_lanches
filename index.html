@@ -31,19 +31,19 @@
     </a>
 
     <!--HEADER DESKTOP-->
-    <div class="bg-home">
+    <div class="bg-home" id="home">
         <header class="header-desktop">
             <nav class="header-content container">
                 <div class="header-menu">
-                    <a href="">Home</a>
-                    <a href="">Sobre nós</a>
+                    <a href="#home">Home</a>
+                    <a href="#servicos">Serviços</a>
                 </div>
                 <div class="header-logo">
                     <img class="img-logo" src="./img/logo_sophie.png" alt="Logo da cafeteria">
                 </div>
                 <div class="header-menu">
-                    <a href="">Produtos</a>
-                    <a href="">Contatos</a>
+                    <a href="#destaques">Destaques</a>
+                    <a href="#cardapio">Cardápio</a>
                 </div>
             </nav>
 
@@ -54,7 +54,7 @@
     </div>
 
     <!--HEADER MOBILE-->
-    <div class="bg-home">
+    <div class="bg-home" id="home">
         <header class="header-mobile">
             <div class="div-button">
                 <button class="nav-button" onclick="openNav()">
@@ -68,10 +68,10 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
                 <div class="overlay-content">
-                    <a href="">Home</a>
-                    <a href="">Sobre nós</a>
-                    <a href="">Produtos</a>
-                    <a href="">Contatos</a>
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#servicos" onclick="closeNav()">Serviços</a>
+                    <a href="#destaques-mob" onclick="closeNav()">Destaques</a>
+                    <a href="#cardapio" onclick="closeNav()">Cardápio</a>
                 </div>
             </div>
             <main class="hero container">
@@ -134,7 +134,7 @@
         </div>
     </section>
 
-    <section class="destaques">
+    <section class="destaques" id="destaques-mob">
 
         <div class="content_destaques">
             <span class="hint-title"><b>Destaques</b></span>
@@ -180,7 +180,7 @@
         
     </section>
 
-    <section class="destaques_desktop">
+    <section class="destaques_desktop" id="destaques">
 
         <div class="container_destaques">
             <span class="hint-title"><b>Destaques</b></span>
