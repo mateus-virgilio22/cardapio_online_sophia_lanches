@@ -635,7 +635,7 @@ cardapio.metodos = {
     // carrega o link do botão reserva
     carregarBotaoReserva: () => {
 
-        var texto = `Olá, gostaria de fazer uma *reserva*!`;
+        var texto = `Olá, gostaria de fazer uma *encomenda de brownies*!`;
 
         let encode = encodeURI(texto);
         let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
