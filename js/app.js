@@ -12,7 +12,7 @@ var VALOR_CARRINHO = 0;
 
 var VALOR_ENTREGA = 1.5;
 
-var CELULAR_EMPRESA = '5588998195203';
+var CELULAR_EMPRESA = '5588996506731';
 
 cardapio.eventos = {
 
