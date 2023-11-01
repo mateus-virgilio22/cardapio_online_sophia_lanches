@@ -236,6 +236,20 @@ var MENU = {
             "name": "Brownie c/ cacau 50%",
             "dsc": "Cacau 50%",
             "price": 8.00
+        },
+        {
+            "id": "new-orleans-hurricane-mix-1",
+            "img": "./img/cardapio/brownie/brownie.jpg",
+            "name": "Brownie c/ castanha",
+            "dsc": "Castanha",
+            "price": 8.00
+        },
+        {
+            "id": "new-orleans-hurricane-mix-2",
+            "img": "./img/cardapio/brownie/brownie.jpg",
+            "name": "Brownie c/ beijinho",
+            "dsc": "Beijinho",
+            "price": 8.00
         }
     ]
 }
